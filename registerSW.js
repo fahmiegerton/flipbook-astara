@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/flipbook-astara/sw.js', { scope: '/flipbook-astara/' })})}
