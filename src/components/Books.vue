@@ -28,7 +28,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .flipbook {
 	width: 90vw;
 	height: 90vh;
