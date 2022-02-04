@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .flipbook {
-	width: 90vw;
-	height: 90vh;
+	width: 100vw;
+	height: 100vh;
 }
 </style>
