@@ -36,7 +36,7 @@ Terdapat dua file gambar, gambar utama dan gambar asli.
    > Ingat! Dimensi file gambar harus sama pada semua file.
 
 - Gambar Asli (Tidak wajib).
-  Gambar asli merupakan file gambar asli dari gambar utama. Ini digunakan saat user akan memperbesar (zoom) file gambar utama sehingga tidak akan pecah. Kenapa ada opsi ini? Karena untuk mempercepat loading gambar utama sehingga ukuran gambar utama tidak perlu besar (kecil saja, biasanya 50KB-100KB).
+  Gambar asli merupakan file gambar asli dari gambar utama. Ini digunakan saat user akan memperbesar (zoom) file gambar utama sehingga tidak akan pecah. Kenapa ada opsi ini? Karena untuk mempercepat loading gambar utama sehingga ukuran gambar utama tidak perlu besar (kecil saja, biasanya 50KB-100KB). File gambar ini bisa ditemukan/ditaruh di dalam `src > assets > menusprev`.
 
 ### - Konfigurasi Flipbook
 Untuk mengkonfigurasi flipbook, edit file `gambar.json` di folder `src > assets > gambar.json`. Berikut penjelasannya.
