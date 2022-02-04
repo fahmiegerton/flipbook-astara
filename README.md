@@ -32,7 +32,7 @@ Terdapat beberapa konfigurasi sebelum membuild aplikasi ini.
 ### - File Gambar
 Terdapat dua file gambar, gambar utama dan gambar asli. 
 - Gambar Utama (Wajib).
-  Gambar utama terdapat di folder `src > assets > menus`. Disini Anda meletakkan semua gambar yang ingin ditaruh dalam flipbook. Aplikasi akan secara otomatis memasukkan semua gambar dalam folder ini dalam flipbook.
+  Gambar utama terdapat di folder `src > assets > menus`. Disini Anda meletakkan semua gambar yang ingin ditaruh dalam flipbook. Aplikasi akan secara otomatis memasukkan semua gambar dalam folder ini kedalam flipbook.
    > Ingat! Dimensi file gambar harus sama pada semua file.
 
 - Gambar Asli (Tidak wajib).
