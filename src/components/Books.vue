@@ -11,10 +11,10 @@
 <script>
 import Flipbook from "flipbook-vue";
 
-const img = import.meta.globEager("../assets/menus/*.jpeg");
+const img = import.meta.globEager("../assets/menus/*.jpg");
 const images = [null, ...Object.values(img).map((m) => m.default)];
 
-const imgprev = import.meta.globEager("../assets/menusprev/*.jpeg");
+const imgprev = import.meta.globEager("../assets/menusprev/*.jpg");
 const imagesprev = [null, ...Object.values(imgprev).map((m) => m.default)];
 
 const gambar = import.meta.globEager("../assets/gambar.json");
