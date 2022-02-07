@@ -79,7 +79,7 @@ npm run preview
 ```
 
 #### Catatan untuk subfolder hosting
-Untuk memasukkan folder dalam hosting yang memiliki subfolder (seperti http://mywebsite.domain/mytruewebsite), ada beberapa pengaturan yang harus disesuaikan. Anda hanya perlu menambahkan baris ini di dalam `vite.config.js` seperti ini:
+Untuk memasukkan folder dalam hosting yang memiliki subfolder (seperti http://mywebsite.domain/mytruewebsite), ada beberapa pengaturan yang harus disesuaikan. Anda hanya perlu menambahkan properti `base` di dalam `vite.config.js` seperti ini:
 
 ```javascript
 // isi file vite.config.js
