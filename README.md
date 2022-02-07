@@ -67,7 +67,8 @@ atau jika tidak menggunakan yarn, bisa dengan npm dengan cara :
 npm run build
 ```
 
-Kemudian upload seluruh isi dist ke dalam folder `public_html` (atau folder `public` Anda). Namun, jika ingin menjalankan aplikasi yang sudah di build secara lokal, dapat menjalankan perintah dibawah ini.
+### Memasukkan Aplikasi Dalam Hosting
+Setelah build aplikasi sukses, maka akan ada folder bernama `dist`. Upload seluruh isi dist ke dalam folder `public_html` (atau folder `public` Anda). Namun, jika ingin menjalankan aplikasi yang sudah di build secara lokal, dapat menjalankan perintah dibawah ini.
 ```bash
 yarn preview
 ```
@@ -76,3 +77,30 @@ atau dengan npm
 ```bash
 npm run preview
 ```
+
+#### Catatan untuk subfolder hosting
+Untuk memasukkan folder dalam hosting yang memiliki subfolder (seperti http://mywebsite.domain/mytruewebsite), ada beberapa pengaturan yang harus disesuaikan. Anda hanya perlu menambahkan baris ini di dalam `vite.config.js` seperti ini:
+
+```javascript
+// isi file vite.config.js
+
+import { defineConfig, loadEnv } from 'vite'
+const { createVuePlugin } = require('vite-plugin-vue2');
+import { VitePWA } from 'vite-plugin-pwa'
+
+process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  base: '/mytruewebsite/', // tambahkan baris ini kedalam vite.config.js diatas baris plugins
+  plugins: [createVuePlugin(), VitePWA({
+    registerType: 'autoUpdate',
+    manifest: {
+      // .....
+    }
+  })],
+})
+
+```
+
+Setelah itu, disimpan, lalu build ulang dan taruh seluruh isi `dist` ke dalam folder public di hosting Anda (contoh: `public_html`).
