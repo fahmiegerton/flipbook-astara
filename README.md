@@ -88,8 +88,6 @@ import { defineConfig, loadEnv } from 'vite'
 const { createVuePlugin } = require('vite-plugin-vue2');
 import { VitePWA } from 'vite-plugin-pwa'
 
-process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
-
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/mytruewebsite/', // tambahkan baris ini kedalam vite.config.js diatas baris plugins
