@@ -30,7 +30,7 @@ Ini merupakan preview aplikasi menu astara hotel menggunakan vue 2+vite dan plug
 Terdapat beberapa konfigurasi sebelum membuild aplikasi ini.
 
 ### - File Gambar
-Terdapat dua file gambar, gambar utama dan gambar asli. 
+File gambar yang hanya disupport saat ini hanya file dengan ekstensi `.jpg`. Pastikan seluruh file gambar ber-ekstensi tersebut. Untuk konfigurasi file gambarnya, terdapat dua file gambar, gambar utama dan gambar asli. 
 - Gambar Utama (Wajib).
   Gambar utama terdapat di folder `src > assets > menus`. Disini Anda meletakkan semua gambar yang ingin ditaruh dalam flipbook. Aplikasi akan secara otomatis memasukkan semua gambar dalam folder ini kedalam flipbook.
    > Ingat! Dimensi file gambar harus sama pada semua file.
@@ -47,6 +47,27 @@ Untuk mengkonfigurasi flipbook, edit file `gambar.json` di folder `src > assets 
 
 ## Menjalankan Secara Lokal
 Untuk dapat menjalankan secara lokal, Anda dapat menjalankannya dengan perintah :
+```bash
+yarn dev
+```
+
+atau dengan npm
+```bash
+npm run dev
+```
+
+## Build Aplikasi
+Untuk dapat menjalankannya pada hosting untuk produksi, cukup jalankan 
+```bash
+yarn build
+```
+
+atau jika tidak menggunakan yarn, bisa dengan npm dengan cara :
+```bash
+npm run build
+```
+
+Kemudian upload seluruh isi dist ke dalam folder `public_html` (atau folder `public` Anda). Namun, jika ingin menjalankan aplikasi yang sudah di build secara lokal, dapat menjalankan perintah dibawah ini.
 ```bash
 yarn preview
 ```
